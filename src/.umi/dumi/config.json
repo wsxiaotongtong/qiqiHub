@@ -4,127 +4,14 @@
       "*": [
         {
           "path": "/",
-          "title": "Hello dumi!",
+          "title": "Hello docs!",
           "meta": {}
         },
         {
-          "title": "Sud",
-          "path": "/sud",
+          "title": "Foo",
+          "path": "/foo",
           "meta": {},
-          "children": [
-            {
-              "path": "/sud/123",
-              "title": "Hello 123!",
-              "meta": {}
-            },
-            {
-              "path": "/sud/234",
-              "title": "234",
-              "meta": {}
-            }
-          ]
-        },
-        {
-          "title": "Sud copy",
-          "path": "/sud copy",
-          "meta": {},
-          "children": [
-            {
-              "path": "/sud copy/123",
-              "title": "Hello 123!",
-              "meta": {}
-            },
-            {
-              "path": "/sud copy/234",
-              "title": "234",
-              "meta": {}
-            }
-          ]
-        },
-        {
-          "title": "Sud copy 2",
-          "path": "/sud copy 2",
-          "meta": {},
-          "children": [
-            {
-              "path": "/sud copy 2/123",
-              "title": "Hello 123!",
-              "meta": {}
-            },
-            {
-              "path": "/sud copy 2/234",
-              "title": "234",
-              "meta": {}
-            }
-          ]
-        },
-        {
-          "title": "Sud copy 3",
-          "path": "/sud copy 3",
-          "meta": {},
-          "children": [
-            {
-              "path": "/sud copy 3/123",
-              "title": "Hello 123!",
-              "meta": {}
-            },
-            {
-              "path": "/sud copy 3/234",
-              "title": "234",
-              "meta": {}
-            }
-          ]
-        },
-        {
-          "title": "Sud copy 4",
-          "path": "/sud copy 4",
-          "meta": {},
-          "children": [
-            {
-              "path": "/sud copy 4/123",
-              "title": "Hello 123!",
-              "meta": {}
-            },
-            {
-              "path": "/sud copy 4/234",
-              "title": "234",
-              "meta": {}
-            }
-          ]
-        },
-        {
-          "title": "Sud copy 5",
-          "path": "/sud copy 5",
-          "meta": {},
-          "children": [
-            {
-              "path": "/sud copy 5/123",
-              "title": "Hello 123!",
-              "meta": {}
-            },
-            {
-              "path": "/sud copy 5/234",
-              "title": "234",
-              "meta": {}
-            }
-          ]
-        },
-        {
-          "title": "Sud copy/sud",
-          "path": "/sud copy/sud",
-          "meta": {},
-          "children": [
-            {
-              "path": "/sud copy/sud/123",
-              "title": "Hello 123!",
-              "meta": {}
-            },
-            {
-              "path": "/sud copy/sud/234",
-              "title": "234",
-              "meta": {}
-            }
-          ]
+          "children": []
         }
       ]
     }
@@ -136,7 +23,8 @@
     }
   ],
   "navs": {},
-  "title": "dumi",
+  "title": "docs",
+  "logo": "https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png",
   "mode": "doc",
   "repository": {
     "branch": "master"

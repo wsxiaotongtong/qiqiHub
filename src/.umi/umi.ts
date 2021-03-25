@@ -4,8 +4,8 @@ import '@@/core/devScripts';
 import { plugin } from './core/plugin';
 import './core/pluginRegister';
 import { createHistory } from './core/history';
-import { ApplyPluginsType } from '/Users/wangshun/Desktop/conclusion/node_modules/_@umijs_runtime@3.4.4@@umijs/runtime';
-import { renderClient } from '/Users/wangshun/Desktop/conclusion/node_modules/_@umijs_renderer-react@3.4.4@@umijs/renderer-react/dist/index.js';
+import { ApplyPluginsType } from '/Users/wangshun/Desktop/conclusion/node_modules/@umijs/runtime';
+import { renderClient } from '/Users/wangshun/Desktop/conclusion/node_modules/@umijs/renderer-react/dist/index.js';
 import { getRoutes } from './core/routes';
 
 
@@ -24,7 +24,7 @@ const getClientRender = (args: { hot?: boolean; routes?: any[] } = {}) => plugin
         history: createHistory(args.hot),
         isServer: process.env.__IS_SERVER,
         rootElement: 'root',
-        defaultTitle: ``,
+        defaultTitle: `docs`,
       },
     });
     return renderClient(opts);
@@ -37,7 +37,7 @@ export default clientRender();
 
 
     window.g_umi = {
-      version: '3.4.4',
+      version: '3.4.6',
     };
   
 

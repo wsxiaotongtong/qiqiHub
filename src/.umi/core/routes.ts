@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { ApplyPluginsType } from '/Users/wangshun/Desktop/conclusion/node_modules/_@umijs_runtime@3.4.4@@umijs/runtime';
+import { ApplyPluginsType } from '/Users/wangshun/Desktop/conclusion/node_modules/@umijs/runtime';
 import * as umiExports from './umiExports';
 import { plugin } from './plugin';
 
@@ -9,9 +9,9 @@ export function getRoutes() {
   {
     "path": "/~demos/:uuid",
     "layout": false,
-    "wrappers": [require('/Users/wangshun/Desktop/conclusion/node_modules/_@umijs_preset-dumi@1.1.10@@umijs/preset-dumi/lib/theme/layout').default],
+    "wrappers": [require('/Users/wangshun/Desktop/conclusion/node_modules/@umijs/preset-dumi/lib/theme/layout').default],
     "component": (props) => {
-        const { default: getDemoRenderArgs } = require('/Users/wangshun/Desktop/conclusion/node_modules/_@umijs_preset-dumi@1.1.10@@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs');
+        const { default: getDemoRenderArgs } = require('/Users/wangshun/Desktop/conclusion/node_modules/@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs');
         const { default: Previewer } = require('dumi-theme-default/src/builtins/Previewer.tsx');
         const { default: demos } = require('@@/dumi/demos');
         const { usePrefersColor } = require('dumi/theme');
@@ -49,336 +49,51 @@ export function getRoutes() {
     "__dumiRoot": true,
     "layout": false,
     "path": "/",
-    "wrappers": [require('/Users/wangshun/Desktop/conclusion/node_modules/_@umijs_preset-dumi@1.1.10@@umijs/preset-dumi/lib/theme/layout').default, require('/Users/wangshun/Desktop/conclusion/node_modules/_@umijs_preset-dumi@1.1.10@@umijs/preset-dumi/node_modules/dumi-theme-default/src/layout.tsx').default],
+    "wrappers": [require('/Users/wangshun/Desktop/conclusion/node_modules/@umijs/preset-dumi/lib/theme/layout').default, require('/Users/wangshun/Desktop/conclusion/node_modules/dumi-theme-default/src/layout.tsx').default],
     "routes": [
       {
+        "path": "/foo",
+        "component": require('/Users/wangshun/Desktop/conclusion/src/Foo/index.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "src/Foo/index.md",
+          "updatedTime": 1616660609507,
+          "componentName": "Foo",
+          "slugs": [
+            {
+              "depth": 2,
+              "value": "Foo",
+              "heading": "foo"
+            }
+          ],
+          "title": "Foo",
+          "group": {
+            "path": "/foo",
+            "title": "Foo"
+          }
+        },
+        "title": "Foo"
+      },
+      {
         "path": "/",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/index.md').default,
+        "component": require('/Users/wangshun/Desktop/conclusion/docs/index.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/index.md",
-          "updatedTime": 1616479070349,
+          "filePath": "docs/index.md",
+          "updatedTime": 1616660609504,
           "slugs": [
             {
-              "depth": 1,
-              "value": "Hello dumi!",
-              "heading": "hello-dumi"
+              "depth": 2,
+              "value": "Hello docs!",
+              "heading": "hello-docs"
             }
           ],
-          "title": "Hello dumi!"
+          "title": "Hello docs!"
         },
-        "title": "Hello dumi!"
-      },
-      {
-        "path": "/sud/123",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/sud/123.md').default,
-        "exact": true,
-        "meta": {
-          "filePath": "src/sud/123.md",
-          "updatedTime": 1616478839773,
-          "slugs": [
-            {
-              "depth": 1,
-              "value": "Hello 123!",
-              "heading": "hello-123"
-            }
-          ],
-          "title": "Hello 123!",
-          "group": {
-            "path": "/sud",
-            "title": "Sud"
-          }
-        },
-        "title": "Hello 123!"
-      },
-      {
-        "path": "/sud/234",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/sud/234.md').default,
-        "exact": true,
-        "meta": {
-          "filePath": "src/sud/234.md",
-          "updatedTime": 1616478970512,
-          "slugs": [],
-          "title": "234",
-          "group": {
-            "path": "/sud",
-            "title": "Sud"
-          }
-        },
-        "title": "234"
-      },
-      {
-        "path": "/sud copy/123",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/sud copy/123.md').default,
-        "exact": true,
-        "meta": {
-          "filePath": "src/sud copy/123.md",
-          "updatedTime": 1616479053996,
-          "slugs": [
-            {
-              "depth": 1,
-              "value": "Hello 123!",
-              "heading": "hello-123"
-            }
-          ],
-          "title": "Hello 123!",
-          "group": {
-            "path": "/sud copy",
-            "title": "Sud copy"
-          }
-        },
-        "title": "Hello 123!"
-      },
-      {
-        "path": "/sud copy/234",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/sud copy/234.md').default,
-        "exact": true,
-        "meta": {
-          "filePath": "src/sud copy/234.md",
-          "updatedTime": 1616479053997,
-          "slugs": [],
-          "title": "234",
-          "group": {
-            "path": "/sud copy",
-            "title": "Sud copy"
-          }
-        },
-        "title": "234"
-      },
-      {
-        "path": "/sud copy/sud/123",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/sud copy/sud/123.md').default,
-        "exact": true,
-        "meta": {
-          "filePath": "src/sud copy/sud/123.md",
-          "updatedTime": 1616479056095,
-          "slugs": [
-            {
-              "depth": 1,
-              "value": "Hello 123!",
-              "heading": "hello-123"
-            }
-          ],
-          "title": "Hello 123!",
-          "group": {
-            "path": "/sud copy/sud",
-            "title": "Sud copy/sud"
-          }
-        },
-        "title": "Hello 123!"
-      },
-      {
-        "path": "/sud copy/sud/234",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/sud copy/sud/234.md').default,
-        "exact": true,
-        "meta": {
-          "filePath": "src/sud copy/sud/234.md",
-          "updatedTime": 1616479056096,
-          "slugs": [],
-          "title": "234",
-          "group": {
-            "path": "/sud copy/sud",
-            "title": "Sud copy/sud"
-          }
-        },
-        "title": "234"
-      },
-      {
-        "path": "/sud copy 2/123",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/sud copy 2/123.md').default,
-        "exact": true,
-        "meta": {
-          "filePath": "src/sud copy 2/123.md",
-          "updatedTime": 1616479058756,
-          "slugs": [
-            {
-              "depth": 1,
-              "value": "Hello 123!",
-              "heading": "hello-123"
-            }
-          ],
-          "title": "Hello 123!",
-          "group": {
-            "path": "/sud copy 2",
-            "title": "Sud copy 2"
-          }
-        },
-        "title": "Hello 123!"
-      },
-      {
-        "path": "/sud copy 2/234",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/sud copy 2/234.md').default,
-        "exact": true,
-        "meta": {
-          "filePath": "src/sud copy 2/234.md",
-          "updatedTime": 1616479058757,
-          "slugs": [],
-          "title": "234",
-          "group": {
-            "path": "/sud copy 2",
-            "title": "Sud copy 2"
-          }
-        },
-        "title": "234"
-      },
-      {
-        "path": "/sud copy 3/123",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/sud copy 3/123.md').default,
-        "exact": true,
-        "meta": {
-          "filePath": "src/sud copy 3/123.md",
-          "updatedTime": 1616479067737,
-          "slugs": [
-            {
-              "depth": 1,
-              "value": "Hello 123!",
-              "heading": "hello-123"
-            }
-          ],
-          "title": "Hello 123!",
-          "group": {
-            "path": "/sud copy 3",
-            "title": "Sud copy 3"
-          }
-        },
-        "title": "Hello 123!"
-      },
-      {
-        "path": "/sud copy 3/234",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/sud copy 3/234.md').default,
-        "exact": true,
-        "meta": {
-          "filePath": "src/sud copy 3/234.md",
-          "updatedTime": 1616479067738,
-          "slugs": [],
-          "title": "234",
-          "group": {
-            "path": "/sud copy 3",
-            "title": "Sud copy 3"
-          }
-        },
-        "title": "234"
-      },
-      {
-        "path": "/sud copy 4/123",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/sud copy 4/123.md').default,
-        "exact": true,
-        "meta": {
-          "filePath": "src/sud copy 4/123.md",
-          "updatedTime": 1616479068797,
-          "slugs": [
-            {
-              "depth": 1,
-              "value": "Hello 123!",
-              "heading": "hello-123"
-            }
-          ],
-          "title": "Hello 123!",
-          "group": {
-            "path": "/sud copy 4",
-            "title": "Sud copy 4"
-          }
-        },
-        "title": "Hello 123!"
-      },
-      {
-        "path": "/sud copy 4/234",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/sud copy 4/234.md').default,
-        "exact": true,
-        "meta": {
-          "filePath": "src/sud copy 4/234.md",
-          "updatedTime": 1616479068798,
-          "slugs": [],
-          "title": "234",
-          "group": {
-            "path": "/sud copy 4",
-            "title": "Sud copy 4"
-          }
-        },
-        "title": "234"
-      },
-      {
-        "path": "/sud copy 5/123",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/sud copy 5/123.md').default,
-        "exact": true,
-        "meta": {
-          "filePath": "src/sud copy 5/123.md",
-          "updatedTime": 1616479069438,
-          "slugs": [
-            {
-              "depth": 1,
-              "value": "Hello 123!",
-              "heading": "hello-123"
-            }
-          ],
-          "title": "Hello 123!",
-          "group": {
-            "path": "/sud copy 5",
-            "title": "Sud copy 5"
-          }
-        },
-        "title": "Hello 123!"
-      },
-      {
-        "path": "/sud copy 5/234",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/sud copy 5/234.md').default,
-        "exact": true,
-        "meta": {
-          "filePath": "src/sud copy 5/234.md",
-          "updatedTime": 1616479069439,
-          "slugs": [],
-          "title": "234",
-          "group": {
-            "path": "/sud copy 5",
-            "title": "Sud copy 5"
-          }
-        },
-        "title": "234"
-      },
-      {
-        "path": "/sud",
-        "meta": {},
-        "exact": true,
-        "redirect": "/sud/123"
-      },
-      {
-        "path": "/sud copy",
-        "meta": {},
-        "exact": true,
-        "redirect": "/sud copy/123"
-      },
-      {
-        "path": "/sud copy/sud",
-        "meta": {},
-        "exact": true,
-        "redirect": "/sud copy/sud/123"
-      },
-      {
-        "path": "/sud copy 2",
-        "meta": {},
-        "exact": true,
-        "redirect": "/sud copy 2/123"
-      },
-      {
-        "path": "/sud copy 3",
-        "meta": {},
-        "exact": true,
-        "redirect": "/sud copy 3/123"
-      },
-      {
-        "path": "/sud copy 4",
-        "meta": {},
-        "exact": true,
-        "redirect": "/sud copy 4/123"
-      },
-      {
-        "path": "/sud copy 5",
-        "meta": {},
-        "exact": true,
-        "redirect": "/sud copy 5/123"
+        "title": "Hello docs!"
       }
     ],
-    "title": "dumi",
+    "title": "docs",
     "component": (props) => props.children
   }
 ];
