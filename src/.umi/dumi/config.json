@@ -1,0 +1,145 @@
+{
+  "menus": {
+    "en-US": {
+      "*": [
+        {
+          "path": "/",
+          "title": "Hello dumi!",
+          "meta": {}
+        },
+        {
+          "title": "Sud",
+          "path": "/sud",
+          "meta": {},
+          "children": [
+            {
+              "path": "/sud/123",
+              "title": "Hello 123!",
+              "meta": {}
+            },
+            {
+              "path": "/sud/234",
+              "title": "234",
+              "meta": {}
+            }
+          ]
+        },
+        {
+          "title": "Sud copy",
+          "path": "/sud copy",
+          "meta": {},
+          "children": [
+            {
+              "path": "/sud copy/123",
+              "title": "Hello 123!",
+              "meta": {}
+            },
+            {
+              "path": "/sud copy/234",
+              "title": "234",
+              "meta": {}
+            }
+          ]
+        },
+        {
+          "title": "Sud copy 2",
+          "path": "/sud copy 2",
+          "meta": {},
+          "children": [
+            {
+              "path": "/sud copy 2/123",
+              "title": "Hello 123!",
+              "meta": {}
+            },
+            {
+              "path": "/sud copy 2/234",
+              "title": "234",
+              "meta": {}
+            }
+          ]
+        },
+        {
+          "title": "Sud copy 3",
+          "path": "/sud copy 3",
+          "meta": {},
+          "children": [
+            {
+              "path": "/sud copy 3/123",
+              "title": "Hello 123!",
+              "meta": {}
+            },
+            {
+              "path": "/sud copy 3/234",
+              "title": "234",
+              "meta": {}
+            }
+          ]
+        },
+        {
+          "title": "Sud copy 4",
+          "path": "/sud copy 4",
+          "meta": {},
+          "children": [
+            {
+              "path": "/sud copy 4/123",
+              "title": "Hello 123!",
+              "meta": {}
+            },
+            {
+              "path": "/sud copy 4/234",
+              "title": "234",
+              "meta": {}
+            }
+          ]
+        },
+        {
+          "title": "Sud copy 5",
+          "path": "/sud copy 5",
+          "meta": {},
+          "children": [
+            {
+              "path": "/sud copy 5/123",
+              "title": "Hello 123!",
+              "meta": {}
+            },
+            {
+              "path": "/sud copy 5/234",
+              "title": "234",
+              "meta": {}
+            }
+          ]
+        },
+        {
+          "title": "Sud copy/sud",
+          "path": "/sud copy/sud",
+          "meta": {},
+          "children": [
+            {
+              "path": "/sud copy/sud/123",
+              "title": "Hello 123!",
+              "meta": {}
+            },
+            {
+              "path": "/sud copy/sud/234",
+              "title": "234",
+              "meta": {}
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "locales": [
+    {
+      "name": "en-US",
+      "label": "English"
+    }
+  ],
+  "navs": {},
+  "title": "dumi",
+  "mode": "doc",
+  "repository": {
+    "branch": "master"
+  },
+  "theme": {}
+}
