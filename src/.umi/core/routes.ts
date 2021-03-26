@@ -52,27 +52,52 @@ export function getRoutes() {
     "wrappers": [require('/Users/wangshun/Desktop/conclusion/node_modules/@umijs/preset-dumi/lib/theme/layout').default, require('/Users/wangshun/Desktop/conclusion/node_modules/dumi-theme-default/src/layout.tsx').default],
     "routes": [
       {
-        "path": "/foo",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/Foo/index.md').default,
+        "path": "/react",
+        "component": require('/Users/wangshun/Desktop/conclusion/src/React/index.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/Foo/index.md",
-          "updatedTime": 1616660609507,
-          "componentName": "Foo",
+          "filePath": "src/React/index.md",
+          "updatedTime": 1616751059199,
+          "componentName": "React",
           "slugs": [
             {
               "depth": 2,
-              "value": "Foo",
-              "heading": "foo"
+              "value": "React API",
+              "heading": "react-api"
+            },
+            {
+              "depth": 3,
+              "value": "React.Children",
+              "heading": "reactchildren"
+            },
+            {
+              "depth": 3,
+              "value": "React.createRef",
+              "heading": "reactcreateref"
+            },
+            {
+              "depth": 3,
+              "value": "Component & PureComponent",
+              "heading": "component--purecomponent"
+            },
+            {
+              "depth": 3,
+              "value": "createContext",
+              "heading": "createcontext"
+            },
+            {
+              "depth": 3,
+              "value": "createElement",
+              "heading": "createelement"
             }
           ],
-          "title": "Foo",
+          "title": "React API",
           "group": {
-            "path": "/foo",
-            "title": "Foo"
+            "path": "/react",
+            "title": "React"
           }
         },
-        "title": "Foo"
+        "title": "React API"
       },
       {
         "path": "/",
@@ -80,20 +105,20 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "docs/index.md",
-          "updatedTime": 1616660609504,
+          "updatedTime": 1616660967000,
           "slugs": [
             {
               "depth": 2,
-              "value": "Hello docs!",
-              "heading": "hello-docs"
+              "value": "Hello XTT!",
+              "heading": "hello-xtt"
             }
           ],
-          "title": "Hello docs!"
+          "title": "Hello XTT!"
         },
-        "title": "Hello docs!"
+        "title": "Hello XTT!"
       }
     ],
-    "title": "docs",
+    "title": "XTT",
     "component": (props) => props.children
   }
 ];

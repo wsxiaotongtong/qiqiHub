@@ -4,14 +4,20 @@
       "*": [
         {
           "path": "/",
-          "title": "Hello docs!",
+          "title": "Hello XTT!",
           "meta": {}
         },
         {
-          "title": "Foo",
-          "path": "/foo",
+          "title": "React",
+          "path": "/react",
           "meta": {},
-          "children": []
+          "children": [
+            {
+              "path": "/react",
+              "title": "React API",
+              "meta": {}
+            }
+          ]
         }
       ]
     }
@@ -23,7 +29,7 @@
     }
   ],
   "navs": {},
-  "title": "docs",
+  "title": "XTT",
   "logo": "https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png",
   "mode": "doc",
   "repository": {
