@@ -105,12 +105,12 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/promise/implPromise.md",
-          "updatedTime": 1617096427879,
+          "updatedTime": 1617096464000,
           "slugs": [
             {
               "depth": 3,
-              "value": "根据Promise/A+ 规范实现 Promise",
-              "heading": "根据promisea-规范实现-promise"
+              "value": "根据 Promise/A+ 规范实现 Promise",
+              "heading": "根据-promisea-规范实现-promise"
             },
             {
               "depth": 4,
@@ -129,22 +129,22 @@ export function getRoutes() {
             },
             {
               "depth": 4,
-              "value": "4.promise实现",
-              "heading": "4promise实现"
+              "value": "4.promise 实现",
+              "heading": "4promise-实现"
             },
             {
               "depth": 4,
-              "value": "5.测试promise",
-              "heading": "5测试promise"
+              "value": "5.测试 promise",
+              "heading": "5测试-promise"
             }
           ],
-          "title": "根据Promise/A+ 规范实现 Promise",
+          "title": "根据 Promise/A+ 规范实现 Promise",
           "group": {
             "path": "/promise",
             "title": "Promise"
           }
         },
-        "title": "根据Promise/A+ 规范实现 Promise"
+        "title": "根据 Promise/A+ 规范实现 Promise"
       },
       {
         "path": "/",

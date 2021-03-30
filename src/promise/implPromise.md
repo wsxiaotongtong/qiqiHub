@@ -156,7 +156,7 @@ class MyPromise{
 
 ```
 <!-- npm install -g promises-aplus-tests -->
-Promise.defer = Promise.deferred = function () { // 稍后继续说 catch
+Promise.defer = Promise.deferred = function () {  //实现延迟对象
     let dfd = {}
     dfd.promise = new Promise((resolve,reject)=>{
         dfd.resolve = resolve;

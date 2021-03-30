@@ -14,7 +14,7 @@
           "children": [
             {
               "path": "/promise/impl-promise",
-              "title": "根据Promise/A+ 规范实现 Promise",
+              "title": "根据 Promise/A+ 规范实现 Promise",
               "meta": {}
             }
           ]
