@@ -57,7 +57,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/React/index.md",
-          "updatedTime": 1616751059199,
+          "updatedTime": 1616751089000,
           "componentName": "React",
           "slugs": [
             {
@@ -100,12 +100,59 @@ export function getRoutes() {
         "title": "React API"
       },
       {
+        "path": "/promise/impl-promise",
+        "component": require('/Users/wangshun/Desktop/conclusion/src/promise/implPromise.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "src/promise/implPromise.md",
+          "updatedTime": 1617096427879,
+          "slugs": [
+            {
+              "depth": 3,
+              "value": "根据Promise/A+ 规范实现 Promise",
+              "heading": "根据promisea-规范实现-promise"
+            },
+            {
+              "depth": 4,
+              "value": "1.Promise 状态",
+              "heading": "1promise-状态"
+            },
+            {
+              "depth": 4,
+              "value": "2.then 方法",
+              "heading": "2then-方法"
+            },
+            {
+              "depth": 4,
+              "value": "3.Promise 解决程序 [[Resolve]](promise, x)",
+              "heading": "3promise-解决程序-resolvepromise-x"
+            },
+            {
+              "depth": 4,
+              "value": "4.promise实现",
+              "heading": "4promise实现"
+            },
+            {
+              "depth": 4,
+              "value": "5.测试promise",
+              "heading": "5测试promise"
+            }
+          ],
+          "title": "根据Promise/A+ 规范实现 Promise",
+          "group": {
+            "path": "/promise",
+            "title": "Promise"
+          }
+        },
+        "title": "根据Promise/A+ 规范实现 Promise"
+      },
+      {
         "path": "/",
         "component": require('/Users/wangshun/Desktop/conclusion/docs/index.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/index.md",
-          "updatedTime": 1616660967000,
+          "updatedTime": 1616751089000,
           "slugs": [
             {
               "depth": 2,
@@ -116,6 +163,12 @@ export function getRoutes() {
           "title": "Hello XTT!"
         },
         "title": "Hello XTT!"
+      },
+      {
+        "path": "/promise",
+        "meta": {},
+        "exact": true,
+        "redirect": "/promise/impl-promise"
       }
     ],
     "title": "XTT",

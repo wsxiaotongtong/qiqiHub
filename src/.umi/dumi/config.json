@@ -8,6 +8,18 @@
           "meta": {}
         },
         {
+          "title": "Promise",
+          "path": "/promise",
+          "meta": {},
+          "children": [
+            {
+              "path": "/promise/impl-promise",
+              "title": "根据Promise/A+ 规范实现 Promise",
+              "meta": {}
+            }
+          ]
+        },
+        {
           "title": "React",
           "path": "/react",
           "meta": {},
