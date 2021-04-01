@@ -57,7 +57,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/React/element.md",
-          "updatedTime": 1617268607235,
+          "updatedTime": 1617269408000,
           "slugs": [
             {
               "depth": 2,
