@@ -52,13 +52,39 @@ export function getRoutes() {
     "wrappers": [require('/Users/wangshun/Desktop/conclusion/node_modules/@umijs/preset-dumi/lib/theme/layout').default, require('/Users/wangshun/Desktop/conclusion/node_modules/dumi-theme-default/src/layout.tsx').default],
     "routes": [
       {
+        "path": "/react/element",
+        "component": require('/Users/wangshun/Desktop/conclusion/src/React/element.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "src/React/element.md",
+          "updatedTime": 1617268607235,
+          "slugs": [
+            {
+              "depth": 2,
+              "value": "ReactElement",
+              "heading": "reactelement"
+            },
+            {
+              "depth": 5,
+              "value": "总结",
+              "heading": "总结"
+            }
+          ],
+          "title": "ReactElement",
+          "group": {
+            "path": "/react",
+            "title": "React"
+          }
+        },
+        "title": "ReactElement"
+      },
+      {
         "path": "/react",
         "component": require('/Users/wangshun/Desktop/conclusion/src/React/index.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/React/index.md",
           "updatedTime": 1616751089000,
-          "componentName": "React",
           "slugs": [
             {
               "depth": 2,
@@ -105,7 +131,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/promise/implPromise.md",
-          "updatedTime": 1617096464000,
+          "updatedTime": 1617096626000,
           "slugs": [
             {
               "depth": 3,
