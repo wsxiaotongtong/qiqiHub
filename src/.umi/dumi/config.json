@@ -8,6 +8,28 @@
           "meta": {}
         },
         {
+          "title": "Algorithm",
+          "path": "/algorithm",
+          "meta": {},
+          "children": [
+            {
+              "path": "/algorithm",
+              "title": "Array",
+              "meta": {}
+            },
+            {
+              "path": "/algorithm/link",
+              "title": "LinkList",
+              "meta": {}
+            },
+            {
+              "path": "/algorithm/stack",
+              "title": "Stack",
+              "meta": {}
+            }
+          ]
+        },
+        {
           "title": "Promise",
           "path": "/promise",
           "meta": {},

@@ -52,6 +52,122 @@ export function getRoutes() {
     "wrappers": [require('/Users/wangshun/Desktop/conclusion/node_modules/@umijs/preset-dumi/lib/theme/layout').default, require('/Users/wangshun/Desktop/conclusion/node_modules/dumi-theme-default/src/layout.tsx').default],
     "routes": [
       {
+        "path": "/algorithm",
+        "component": require('/Users/wangshun/Desktop/conclusion/src/Algorithm/index.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "src/Algorithm/index.md",
+          "updatedTime": 1618140256066,
+          "slugs": [
+            {
+              "depth": 2,
+              "value": "Array",
+              "heading": "array"
+            },
+            {
+              "depth": 4,
+              "value": "移动零",
+              "heading": "移动零"
+            },
+            {
+              "depth": 4,
+              "value": "盛最多水的容器",
+              "heading": "盛最多水的容器"
+            },
+            {
+              "depth": 4,
+              "value": "三数之和",
+              "heading": "三数之和"
+            },
+            {
+              "depth": 4,
+              "value": "移除元素",
+              "heading": "移除元素"
+            },
+            {
+              "depth": 4,
+              "value": "旋转数组",
+              "heading": "旋转数组"
+            }
+          ],
+          "title": "Array",
+          "group": {
+            "path": "/algorithm",
+            "title": "Algorithm"
+          }
+        },
+        "title": "Array"
+      },
+      {
+        "path": "/algorithm/link",
+        "component": require('/Users/wangshun/Desktop/conclusion/src/Algorithm/link.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "src/Algorithm/link.md",
+          "updatedTime": 1618151021625,
+          "slugs": [
+            {
+              "depth": 2,
+              "value": "LinkList",
+              "heading": "linklist"
+            },
+            {
+              "depth": 4,
+              "value": "两两交换链表中的节点",
+              "heading": "两两交换链表中的节点"
+            },
+            {
+              "depth": 4,
+              "value": "反转链表",
+              "heading": "反转链表"
+            },
+            {
+              "depth": 4,
+              "value": "两数相加",
+              "heading": "两数相加"
+            }
+          ],
+          "title": "LinkList",
+          "group": {
+            "path": "/algorithm",
+            "title": "Algorithm"
+          }
+        },
+        "title": "LinkList"
+      },
+      {
+        "path": "/algorithm/stack",
+        "component": require('/Users/wangshun/Desktop/conclusion/src/Algorithm/stack.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "src/Algorithm/stack.md",
+          "updatedTime": 1618149009085,
+          "slugs": [
+            {
+              "depth": 2,
+              "value": "Stack",
+              "heading": "stack"
+            },
+            {
+              "depth": 4,
+              "value": "有效的括号",
+              "heading": "有效的括号"
+            },
+            {
+              "depth": 4,
+              "value": "有效的括号",
+              "heading": "有效的括号-1"
+            }
+          ],
+          "title": "Stack",
+          "group": {
+            "path": "/algorithm",
+            "title": "Algorithm"
+          }
+        },
+        "title": "Stack"
+      },
+      {
         "path": "/react/element",
         "component": require('/Users/wangshun/Desktop/conclusion/src/React/element.md').default,
         "exact": true,
