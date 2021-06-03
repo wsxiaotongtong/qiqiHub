@@ -57,7 +57,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/Algorithm/index.md",
-          "updatedTime": 1618140256066,
+          "updatedTime": 1618151107000,
           "slugs": [
             {
               "depth": 2,
@@ -104,7 +104,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/Algorithm/link.md",
-          "updatedTime": 1618151021625,
+          "updatedTime": 1618151107000,
           "slugs": [
             {
               "depth": 2,
@@ -141,7 +141,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/Algorithm/stack.md",
-          "updatedTime": 1618149009085,
+          "updatedTime": 1618151107000,
           "slugs": [
             {
               "depth": 2,
@@ -240,6 +240,43 @@ export function getRoutes() {
           }
         },
         "title": "React API"
+      },
+      {
+        "path": "/babel",
+        "component": require('/Users/wangshun/Desktop/conclusion/src/babel/index.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "src/babel/index.md",
+          "updatedTime": 1622721465020,
+          "slugs": [
+            {
+              "depth": 2,
+              "value": "Babel",
+              "heading": "babel"
+            },
+            {
+              "depth": 4,
+              "value": "编译器和转译器",
+              "heading": "编译器和转译器"
+            },
+            {
+              "depth": 4,
+              "value": "babel编译流程",
+              "heading": "babel编译流程"
+            },
+            {
+              "depth": 4,
+              "value": "Literal，Identifier，Statement，Declaration，Expression，Class，Modules，import，export",
+              "heading": "literal，identifier，statement，declaration，expression，class，modules，import，export"
+            }
+          ],
+          "title": "Babel",
+          "group": {
+            "path": "/babel",
+            "title": "Babel"
+          }
+        },
+        "title": "Babel"
       },
       {
         "path": "/promise/impl-promise",

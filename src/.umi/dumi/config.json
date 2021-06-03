@@ -30,6 +30,12 @@
           ]
         },
         {
+          "title": "Babel",
+          "path": "/babel",
+          "meta": {},
+          "children": []
+        },
+        {
           "title": "Promise",
           "path": "/promise",
           "meta": {},
