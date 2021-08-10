@@ -8,32 +8,32 @@
           "meta": {}
         },
         {
-          "title": "Algorithm",
-          "path": "/algorithm",
-          "meta": {},
-          "children": [
-            {
-              "path": "/algorithm",
-              "title": "Array",
-              "meta": {}
-            },
-            {
-              "path": "/algorithm/link",
-              "title": "LinkList",
-              "meta": {}
-            },
-            {
-              "path": "/algorithm/stack",
-              "title": "Stack",
-              "meta": {}
-            }
-          ]
-        },
-        {
           "title": "Babel",
           "path": "/babel",
           "meta": {},
           "children": []
+        },
+        {
+          "title": "Leetcode",
+          "path": "/leetcode",
+          "meta": {},
+          "children": [
+            {
+              "path": "/leetcode",
+              "title": "Array",
+              "meta": {}
+            },
+            {
+              "path": "/leetcode/link",
+              "title": "LinkList",
+              "meta": {}
+            },
+            {
+              "path": "/leetcode/stack",
+              "title": "Stack",
+              "meta": {}
+            }
+          ]
         },
         {
           "title": "Promise",
@@ -60,6 +60,18 @@
             {
               "path": "/react/element",
               "title": "ReactElement",
+              "meta": {}
+            }
+          ]
+        },
+        {
+          "title": "浏览器方面",
+          "path": "/浏览器方面",
+          "meta": {},
+          "children": [
+            {
+              "path": "/浏览器方面/宏观看浏览器",
+              "title": "浏览器\b",
               "meta": {}
             }
           ]

@@ -52,122 +52,6 @@ export function getRoutes() {
     "wrappers": [require('/Users/wangshun/Desktop/conclusion/node_modules/@umijs/preset-dumi/lib/theme/layout').default, require('/Users/wangshun/Desktop/conclusion/node_modules/dumi-theme-default/src/layout.tsx').default],
     "routes": [
       {
-        "path": "/algorithm",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/Algorithm/index.md').default,
-        "exact": true,
-        "meta": {
-          "filePath": "src/Algorithm/index.md",
-          "updatedTime": 1618151107000,
-          "slugs": [
-            {
-              "depth": 2,
-              "value": "Array",
-              "heading": "array"
-            },
-            {
-              "depth": 4,
-              "value": "移动零",
-              "heading": "移动零"
-            },
-            {
-              "depth": 4,
-              "value": "盛最多水的容器",
-              "heading": "盛最多水的容器"
-            },
-            {
-              "depth": 4,
-              "value": "三数之和",
-              "heading": "三数之和"
-            },
-            {
-              "depth": 4,
-              "value": "移除元素",
-              "heading": "移除元素"
-            },
-            {
-              "depth": 4,
-              "value": "旋转数组",
-              "heading": "旋转数组"
-            }
-          ],
-          "title": "Array",
-          "group": {
-            "path": "/algorithm",
-            "title": "Algorithm"
-          }
-        },
-        "title": "Array"
-      },
-      {
-        "path": "/algorithm/link",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/Algorithm/link.md').default,
-        "exact": true,
-        "meta": {
-          "filePath": "src/Algorithm/link.md",
-          "updatedTime": 1618151107000,
-          "slugs": [
-            {
-              "depth": 2,
-              "value": "LinkList",
-              "heading": "linklist"
-            },
-            {
-              "depth": 4,
-              "value": "两两交换链表中的节点",
-              "heading": "两两交换链表中的节点"
-            },
-            {
-              "depth": 4,
-              "value": "反转链表",
-              "heading": "反转链表"
-            },
-            {
-              "depth": 4,
-              "value": "两数相加",
-              "heading": "两数相加"
-            }
-          ],
-          "title": "LinkList",
-          "group": {
-            "path": "/algorithm",
-            "title": "Algorithm"
-          }
-        },
-        "title": "LinkList"
-      },
-      {
-        "path": "/algorithm/stack",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/Algorithm/stack.md').default,
-        "exact": true,
-        "meta": {
-          "filePath": "src/Algorithm/stack.md",
-          "updatedTime": 1618151107000,
-          "slugs": [
-            {
-              "depth": 2,
-              "value": "Stack",
-              "heading": "stack"
-            },
-            {
-              "depth": 4,
-              "value": "有效的括号",
-              "heading": "有效的括号"
-            },
-            {
-              "depth": 4,
-              "value": "有效的括号",
-              "heading": "有效的括号-1"
-            }
-          ],
-          "title": "Stack",
-          "group": {
-            "path": "/algorithm",
-            "title": "Algorithm"
-          }
-        },
-        "title": "Stack"
-      },
-      {
         "path": "/react/element",
         "component": require('/Users/wangshun/Desktop/conclusion/src/React/element.md').default,
         "exact": true,
@@ -247,7 +131,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/babel/index.md",
-          "updatedTime": 1622721465020,
+          "updatedTime": 1622721509000,
           "slugs": [
             {
               "depth": 2,
@@ -261,13 +145,13 @@ export function getRoutes() {
             },
             {
               "depth": 4,
-              "value": "babel编译流程",
-              "heading": "babel编译流程"
+              "value": "babel 编译流程",
+              "heading": "babel-编译流程"
             },
             {
               "depth": 4,
-              "value": "Literal，Identifier，Statement，Declaration，Expression，Class，Modules，import，export",
-              "heading": "literal，identifier，statement，declaration，expression，class，modules，import，export"
+              "value": "AST 节点",
+              "heading": "ast-节点"
             }
           ],
           "title": "Babel",
@@ -277,6 +161,122 @@ export function getRoutes() {
           }
         },
         "title": "Babel"
+      },
+      {
+        "path": "/leetcode",
+        "component": require('/Users/wangshun/Desktop/conclusion/src/leetcode/index.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "src/leetcode/index.md",
+          "updatedTime": 1618151108512,
+          "slugs": [
+            {
+              "depth": 2,
+              "value": "Array",
+              "heading": "array"
+            },
+            {
+              "depth": 4,
+              "value": "移动零",
+              "heading": "移动零"
+            },
+            {
+              "depth": 4,
+              "value": "盛最多水的容器",
+              "heading": "盛最多水的容器"
+            },
+            {
+              "depth": 4,
+              "value": "三数之和",
+              "heading": "三数之和"
+            },
+            {
+              "depth": 4,
+              "value": "移除元素",
+              "heading": "移除元素"
+            },
+            {
+              "depth": 4,
+              "value": "旋转数组",
+              "heading": "旋转数组"
+            }
+          ],
+          "title": "Array",
+          "group": {
+            "path": "/leetcode",
+            "title": "Leetcode"
+          }
+        },
+        "title": "Array"
+      },
+      {
+        "path": "/leetcode/link",
+        "component": require('/Users/wangshun/Desktop/conclusion/src/leetcode/link.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "src/leetcode/link.md",
+          "updatedTime": 1618151108544,
+          "slugs": [
+            {
+              "depth": 2,
+              "value": "LinkList",
+              "heading": "linklist"
+            },
+            {
+              "depth": 4,
+              "value": "两两交换链表中的节点",
+              "heading": "两两交换链表中的节点"
+            },
+            {
+              "depth": 4,
+              "value": "反转链表",
+              "heading": "反转链表"
+            },
+            {
+              "depth": 4,
+              "value": "两数相加",
+              "heading": "两数相加"
+            }
+          ],
+          "title": "LinkList",
+          "group": {
+            "path": "/leetcode",
+            "title": "Leetcode"
+          }
+        },
+        "title": "LinkList"
+      },
+      {
+        "path": "/leetcode/stack",
+        "component": require('/Users/wangshun/Desktop/conclusion/src/leetcode/stack.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "src/leetcode/stack.md",
+          "updatedTime": 1618151108558,
+          "slugs": [
+            {
+              "depth": 2,
+              "value": "Stack",
+              "heading": "stack"
+            },
+            {
+              "depth": 4,
+              "value": "有效的括号",
+              "heading": "有效的括号"
+            },
+            {
+              "depth": 4,
+              "value": "有效的括号",
+              "heading": "有效的括号-1"
+            }
+          ],
+          "title": "Stack",
+          "group": {
+            "path": "/leetcode",
+            "title": "Leetcode"
+          }
+        },
+        "title": "Stack"
       },
       {
         "path": "/promise/impl-promise",
@@ -326,6 +326,78 @@ export function getRoutes() {
         "title": "根据 Promise/A+ 规范实现 Promise"
       },
       {
+        "path": "/浏览器方面/宏观看浏览器",
+        "component": require('/Users/wangshun/Desktop/conclusion/src/浏览器方面/宏观看浏览器.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "src/浏览器方面/宏观看浏览器.md",
+          "updatedTime": 1628154593138,
+          "slugs": [
+            {
+              "depth": 3,
+              "value": "浏览器\b",
+              "heading": "浏览器\b"
+            },
+            {
+              "depth": 4,
+              "value": "浏览器多进程架构",
+              "heading": "浏览器多进程架构"
+            },
+            {
+              "depth": 4,
+              "value": "TCP协议",
+              "heading": "tcp协议"
+            },
+            {
+              "depth": 5,
+              "value": "你怎么理解 HTTP 和 TCP 的关系？",
+              "heading": "你怎么理解-http-和-tcp-的关系？"
+            },
+            {
+              "depth": 4,
+              "value": "HTTP请求流程",
+              "heading": "http请求流程"
+            },
+            {
+              "depth": 4,
+              "value": "URL输入到页面展示经历了什么？",
+              "heading": "url输入到页面展示经历了什么？"
+            },
+            {
+              "depth": 5,
+              "value": "用户输入",
+              "heading": "用户输入"
+            },
+            {
+              "depth": 5,
+              "value": "URL 请求",
+              "heading": "url-请求"
+            },
+            {
+              "depth": 5,
+              "value": "准备渲染进程",
+              "heading": "准备渲染进程"
+            },
+            {
+              "depth": 5,
+              "value": "提交文档",
+              "heading": "提交文档"
+            },
+            {
+              "depth": 5,
+              "value": "渲染",
+              "heading": "渲染"
+            }
+          ],
+          "title": "浏览器\b",
+          "group": {
+            "path": "/浏览器方面",
+            "title": "浏览器方面"
+          }
+        },
+        "title": "浏览器\b"
+      },
+      {
         "path": "/",
         "component": require('/Users/wangshun/Desktop/conclusion/docs/index.md').default,
         "exact": true,
@@ -348,6 +420,12 @@ export function getRoutes() {
         "meta": {},
         "exact": true,
         "redirect": "/promise/impl-promise"
+      },
+      {
+        "path": "/浏览器方面",
+        "meta": {},
+        "exact": true,
+        "redirect": "/浏览器方面/宏观看浏览器"
       }
     ],
     "title": "XTT",
