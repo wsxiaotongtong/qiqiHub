@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { ApplyPluginsType } from '/Users/wangshun/Desktop/conclusion/node_modules/@umijs/runtime';
+import { ApplyPluginsType } from '/Users/wangshun/Desktop/77Hub/qiqiHub/node_modules/@umijs/runtime';
 import * as umiExports from './umiExports';
 import { plugin } from './plugin';
 
@@ -9,15 +9,21 @@ export function getRoutes() {
   {
     "path": "/~demos/:uuid",
     "layout": false,
-    "wrappers": [require('/Users/wangshun/Desktop/conclusion/node_modules/@umijs/preset-dumi/lib/theme/layout').default],
-    "component": (props) => {
-        const { default: getDemoRenderArgs } = require('/Users/wangshun/Desktop/conclusion/node_modules/@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs');
-        const { default: Previewer } = require('dumi-theme-default/src/builtins/Previewer.tsx');
-        const { default: demos } = require('@@/dumi/demos');
-        const { usePrefersColor } = require('dumi/theme');
+    "wrappers": [require('../dumi/layout').default],
+    "component": ((props) => {
+        const React = require('react');
+        const { default: getDemoRenderArgs } = require('/Users/wangshun/Desktop/77Hub/qiqiHub/node_modules/@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs');
+        const { default: Previewer } = require('dumi-theme-default/es/builtins/Previewer.js');
+        const { usePrefersColor, context } = require('dumi/theme');
 
         
-      const renderArgs = getDemoRenderArgs(props, demos);
+      const { demos } = React.useContext(context);
+      const [renderArgs, setRenderArgs] = React.useState([]);
+
+      // update render args when props changed
+      React.useLayoutEffect(() => {
+        setRenderArgs(getDemoRenderArgs(props, demos));
+      }, [props.match.params.uuid, props.location.query.wrapper, props.location.query.capture]);
 
       // for listen prefers-color-schema media change in demo single route
       usePrefersColor();
@@ -39,7 +45,7 @@ export function getRoutes() {
           return `Demo ${props.match.params.uuid} not found :(`;
       }
     
-        }
+        })
   },
   {
     "path": "/_demos/:uuid",
@@ -49,11 +55,11 @@ export function getRoutes() {
     "__dumiRoot": true,
     "layout": false,
     "path": "/",
-    "wrappers": [require('/Users/wangshun/Desktop/conclusion/node_modules/@umijs/preset-dumi/lib/theme/layout').default, require('/Users/wangshun/Desktop/conclusion/node_modules/dumi-theme-default/src/layout.tsx').default],
+    "wrappers": [require('../dumi/layout').default, require('/Users/wangshun/Desktop/77Hub/qiqiHub/node_modules/dumi-theme-default/es/layout.js').default],
     "routes": [
       {
         "path": "/react/element",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/React/element.md').default,
+        "component": require('/Users/wangshun/Desktop/77Hub/qiqiHub/src/React/element.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/React/element.md",
@@ -76,11 +82,11 @@ export function getRoutes() {
             "title": "React"
           }
         },
-        "title": "ReactElement"
+        "title": "ReactElement - XTT"
       },
       {
         "path": "/react",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/React/index.md').default,
+        "component": require('/Users/wangshun/Desktop/77Hub/qiqiHub/src/React/index.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/React/index.md",
@@ -123,15 +129,15 @@ export function getRoutes() {
             "title": "React"
           }
         },
-        "title": "React API"
+        "title": "React API - XTT"
       },
       {
         "path": "/babel",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/babel/index.md').default,
+        "component": require('/Users/wangshun/Desktop/77Hub/qiqiHub/src/babel/index.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/babel/index.md",
-          "updatedTime": 1622721509000,
+          "updatedTime": 1628574786000,
           "slugs": [
             {
               "depth": 2,
@@ -160,15 +166,87 @@ export function getRoutes() {
             "title": "Babel"
           }
         },
-        "title": "Babel"
+        "title": "Babel - XTT"
+      },
+      {
+        "path": "/browser/macro-browser",
+        "component": require('/Users/wangshun/Desktop/77Hub/qiqiHub/src/browser/macroBrowser.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "src/browser/macroBrowser.md",
+          "updatedTime": 1647487537000,
+          "slugs": [
+            {
+              "depth": 3,
+              "value": "浏览器 \b",
+              "heading": "浏览器-"
+            },
+            {
+              "depth": 4,
+              "value": "浏览器多进程架构",
+              "heading": "浏览器多进程架构"
+            },
+            {
+              "depth": 4,
+              "value": "TCP 协议",
+              "heading": "tcp-协议"
+            },
+            {
+              "depth": 5,
+              "value": "你怎么理解 HTTP 和 TCP 的关系？",
+              "heading": "你怎么理解-http-和-tcp-的关系"
+            },
+            {
+              "depth": 4,
+              "value": "HTTP 请求流程",
+              "heading": "http-请求流程"
+            },
+            {
+              "depth": 4,
+              "value": "URL 输入到页面展示经历了什么？",
+              "heading": "url-输入到页面展示经历了什么"
+            },
+            {
+              "depth": 5,
+              "value": "用户输入",
+              "heading": "用户输入"
+            },
+            {
+              "depth": 5,
+              "value": "URL 请求",
+              "heading": "url-请求"
+            },
+            {
+              "depth": 5,
+              "value": "准备渲染进程",
+              "heading": "准备渲染进程"
+            },
+            {
+              "depth": 5,
+              "value": "提交文档",
+              "heading": "提交文档"
+            },
+            {
+              "depth": 5,
+              "value": "渲染",
+              "heading": "渲染"
+            }
+          ],
+          "title": "浏览器 \b",
+          "group": {
+            "path": "/browser",
+            "title": "Browser"
+          }
+        },
+        "title": "浏览器 \b - XTT"
       },
       {
         "path": "/leetcode",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/leetcode/index.md').default,
+        "component": require('/Users/wangshun/Desktop/77Hub/qiqiHub/src/leetcode/index.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/leetcode/index.md",
-          "updatedTime": 1618151108512,
+          "updatedTime": 1628574786000,
           "slugs": [
             {
               "depth": 2,
@@ -207,15 +285,15 @@ export function getRoutes() {
             "title": "Leetcode"
           }
         },
-        "title": "Array"
+        "title": "Array - XTT"
       },
       {
         "path": "/leetcode/link",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/leetcode/link.md').default,
+        "component": require('/Users/wangshun/Desktop/77Hub/qiqiHub/src/leetcode/link.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/leetcode/link.md",
-          "updatedTime": 1618151108544,
+          "updatedTime": 1628574786000,
           "slugs": [
             {
               "depth": 2,
@@ -244,15 +322,15 @@ export function getRoutes() {
             "title": "Leetcode"
           }
         },
-        "title": "LinkList"
+        "title": "LinkList - XTT"
       },
       {
         "path": "/leetcode/stack",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/leetcode/stack.md').default,
+        "component": require('/Users/wangshun/Desktop/77Hub/qiqiHub/src/leetcode/stack.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/leetcode/stack.md",
-          "updatedTime": 1618151108558,
+          "updatedTime": 1628574786000,
           "slugs": [
             {
               "depth": 2,
@@ -276,11 +354,11 @@ export function getRoutes() {
             "title": "Leetcode"
           }
         },
-        "title": "Stack"
+        "title": "Stack - XTT"
       },
       {
         "path": "/promise/impl-promise",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/promise/implPromise.md').default,
+        "component": require('/Users/wangshun/Desktop/77Hub/qiqiHub/src/promise/implPromise.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/promise/implPromise.md",
@@ -323,83 +401,11 @@ export function getRoutes() {
             "title": "Promise"
           }
         },
-        "title": "根据 Promise/A+ 规范实现 Promise"
-      },
-      {
-        "path": "/浏览器方面/宏观看浏览器",
-        "component": require('/Users/wangshun/Desktop/conclusion/src/浏览器方面/宏观看浏览器.md').default,
-        "exact": true,
-        "meta": {
-          "filePath": "src/浏览器方面/宏观看浏览器.md",
-          "updatedTime": 1628154593138,
-          "slugs": [
-            {
-              "depth": 3,
-              "value": "浏览器\b",
-              "heading": "浏览器\b"
-            },
-            {
-              "depth": 4,
-              "value": "浏览器多进程架构",
-              "heading": "浏览器多进程架构"
-            },
-            {
-              "depth": 4,
-              "value": "TCP协议",
-              "heading": "tcp协议"
-            },
-            {
-              "depth": 5,
-              "value": "你怎么理解 HTTP 和 TCP 的关系？",
-              "heading": "你怎么理解-http-和-tcp-的关系？"
-            },
-            {
-              "depth": 4,
-              "value": "HTTP请求流程",
-              "heading": "http请求流程"
-            },
-            {
-              "depth": 4,
-              "value": "URL输入到页面展示经历了什么？",
-              "heading": "url输入到页面展示经历了什么？"
-            },
-            {
-              "depth": 5,
-              "value": "用户输入",
-              "heading": "用户输入"
-            },
-            {
-              "depth": 5,
-              "value": "URL 请求",
-              "heading": "url-请求"
-            },
-            {
-              "depth": 5,
-              "value": "准备渲染进程",
-              "heading": "准备渲染进程"
-            },
-            {
-              "depth": 5,
-              "value": "提交文档",
-              "heading": "提交文档"
-            },
-            {
-              "depth": 5,
-              "value": "渲染",
-              "heading": "渲染"
-            }
-          ],
-          "title": "浏览器\b",
-          "group": {
-            "path": "/浏览器方面",
-            "title": "浏览器方面"
-          }
-        },
-        "title": "浏览器\b"
+        "title": "根据 Promise/A+ 规范实现 Promise - XTT"
       },
       {
         "path": "/",
-        "component": require('/Users/wangshun/Desktop/conclusion/docs/index.md').default,
+        "component": require('/Users/wangshun/Desktop/77Hub/qiqiHub/docs/index.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/index.md",
@@ -413,19 +419,19 @@ export function getRoutes() {
           ],
           "title": "Hello XTT!"
         },
-        "title": "Hello XTT!"
+        "title": "Hello XTT! - XTT"
+      },
+      {
+        "path": "/browser",
+        "meta": {},
+        "exact": true,
+        "redirect": "/browser/macro-browser"
       },
       {
         "path": "/promise",
         "meta": {},
         "exact": true,
         "redirect": "/promise/impl-promise"
-      },
-      {
-        "path": "/浏览器方面",
-        "meta": {},
-        "exact": true,
-        "redirect": "/浏览器方面/宏观看浏览器"
       }
     ],
     "title": "XTT",
